@@ -1,0 +1,435 @@
+  /*
+    Student Name: Jacob Ward
+    File Name: styles.css
+    Date: July 25, 2024
+  */
+
+  /* CSS Reset */
+  body,
+  header,
+  nav,
+  main,
+  footer,
+  img,
+  h1,
+  h3,
+  ul,
+  figure,
+  figcaption,
+  aside {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+  /* Header Style */
+
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 1em 2em;
+  }
+
+  header,
+  h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.75em;
+  }
+
+  /* Style rules for body and images */
+
+  body {
+    background-color: black;
+  }
+
+  .hero {
+    flex-grow: 1;
+    padding: 1em;
+    margin-right: 1em;
+  }
+
+  .images {
+    max-width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 5%;
+  }
+
+  .intro {
+    font-size: 18px;
+    color: #fff;
+    flex-grow: 2;
+    padding: 1em;
+    background-color: #000;
+    width: 70%;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  intro {
+    background-color: #000000;
+  }
+
+  /* Style rules for mobile viewport */
+  @media (max-width: 768px) {
+
+    #contact,
+    #form h2 {
+      text-align: center;
+    }
+
+    /* Style rules for form elements */
+
+    fieldset,
+    input,
+    textarea {
+      margin-bottom: 2%;
+    }
+
+    fieldset legend {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
+    label {
+      display: block;
+      padding-top: 2%;
+    }
+
+    #form #submit {
+      margin: 0 auto;
+      display: block;
+      padding: 2%;
+      background-color: #78593a;
+      color: #f6eee4;
+      font-size: 1.25em;
+      border-radius: 10px;
+    }
+  }
+
+  /* Style rules to show mobile class and hide tab-desk class */
+
+  .mobile,
+  .mobile-tablet {
+    display: none;
+  }
+
+  .tab-desk,
+  .desktop {
+    display: block;
+  }
+
+  /* Style rules for header area */
+
+  .mobile h1,
+  h3 {
+    padding: 2%;
+    text-align: center;
+  }
+
+  .mobile h1 {
+    font-family: "Emblema One", system-ui;
+  }
+
+  .mobile h3 {
+    font-family: "Lora", serif;
+  }
+
+
+  /* Style rules for navigation area */
+
+  nav {
+    background-color: #101010;
+    border-bottom: #f6eee4 thin;
+    border-style: dotted;
+  }
+
+  /* Nav - Unordered HTML List  */
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  /* Nav - HTML List Element  */
+
+  nav li {
+    display: inline-block;
+    font-size: 1.25em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    /* border: solid;
+    border-top: 0.5px;
+    */
+    border-color: #fff;
+  }
+
+  nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em;
+    /* padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    */
+    text-decoration: none;
+  }
+
+
+  .icons ul {
+    list-style-type: none;
+  }
+
+  .icons li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2%;
+  }
+
+  /* Style Rules for main content */
+
+  main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+  main p {
+    font-size: 1.25em;
+  }
+
+  main h3 {
+    padding-top: 2%;
+    text-align: left;
+  }
+
+  main ul {
+    list-style: square;
+  }
+
+  .link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .round {
+    border-radius: 6px;
+  }
+
+  aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  figure {
+    border: 1px solid #ffffff;
+    max-width: 400px;
+    margin: 2% auto;
+    padding: 15px;
+    background-color: #101010;
+  }
+
+  figcaption {
+    padding: 2%;
+    border-top: 4px solid #fff;
+    margin-top: 10px;
+    font-style: italic;
+    color: #fff;
+  }
+
+  #info ul {
+    margin-left: 10%;
+  }
+
+  #contact {
+    text-align: center;
+  }
+
+  .tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Style rules for footer content */
+
+  footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #101010;
+    color: #fff;
+    border-top: #f6eee4 thin;
+    border-style: dotted;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  footer a {
+    color: #3968cf;
+    text-decoration: none;
+  }
+
+  /* Media Query for Tablet Viewport */
+
+  @media screen and (min-width: 620px),
+  print {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+
+    aside {
+      grid-column: 1 / span 2;
+    }
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+
+    /* Tablet Viewport: Style rules for nav area */
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+  }
+
+  /* Media Query for Large Desktop Viewports. */
+  @media screen and (min-width: 1921px) {
+
+    body {
+      background-color: black;
+      )
+    }
+
+    #wrapper {
+      width: 1920px;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      background-color: #000;
+    }
+
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    aside {
+      grid-column: 1 / span 4;
+      font-size: 3em;
+    }
+  }
+
+  /* Media Query for Print. */
+  @media print {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  /* Media Query for Desktop Viewport. */
+
+  @media screen and (min-width: 1000px),
+  print {
+
+    /* Desktop Viewport: Style rules for nav area. */
+
+    nav li {
+      font-size: 1.5em;
+    }
+
+    nav li a:hover {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+      color: #fff;
+      background-color: #000000;
+    }
+
+    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+
+    /* Style rules for table */
+
+    table {
+      border: 1px solid #2a1f14;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 1%;
+    }
+
+    th,
+    td {
+      border: 1px solid #2a1f14;
+      padding: 1%;
+    }
+
+    th {
+      background-color: #2a1f14;
+      color: #fff;
+      font-size: 1.15em;
+    }
+
+    tr:nth-of-type(odd) {
+      background-color: #deccba;
+    }
+
+    /* .desktop {} */
+
+    .mobile-tablet {
+      display: none;
+    }
+
+    #info ul {
+      margin-left: 5%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+
+    aside {
+      grid-column: 1 / span 3;
+      font-size: 2em;
+    }
+  }
